@@ -1,16 +1,18 @@
 [tool.poetry]
-name = "phone-number-validator"
-version = "1.0.0"
-description = "Validate Phone Numbers using NumLookupAPI"
-authors = ["Ashutosh Krishna <ashutoshbritish@gmail.com>"]
+name = "bankinfo"
+version = "1.0.2"
+description = "获取中国的银行信息"
+authors = ["zhaione <zhaifengone@gmail.com>"]
 readme = "README.md"
 license = "Apache-2.0"
-repository = "https://github.com/ashutoshkrris/phone-number-validator"
-packages = [{include = "phone_number_validator"}]
+homepage = "https://github.com/lisenone/bankinfo"
+repository = "https://github.com/lisenone/bankinfo"
+packages = [{ include = "bankinfo" }]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.8"
 requests = "^2.28.2"
+py_eth_contract = '^0.1.0'
 
 
 [tool.poetry.group.test.dependencies]
@@ -20,3 +22,7 @@ requests-mock = "^1.10.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+bankinfo = "bankinfo.validator:main"

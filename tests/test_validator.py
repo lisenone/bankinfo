@@ -1,5 +1,5 @@
 import pytest
-from phone_number_validator.validator import PhoneNumberValidator
+from bankinfo.validator import PhoneNumberValidator
 
 
 VALID_PHONE_NUMBER="+12069220880"
